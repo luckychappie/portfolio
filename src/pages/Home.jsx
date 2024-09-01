@@ -38,8 +38,12 @@ const steps = [
         company: 'Career-Tech Japan Co.,Ltd',
         position: 'Full Stack Developer',
         description: [
-            'Develop and maintain Government Assets Management Project using Codeigniter and Bootstrap',
-            'Build company in-house E-learning and job agency projects using Laravel, CakePHP, Bootstrap, Vue (Framework - Nuxt js)',
+            // 'Build company in-house E-learning and job agency projects using Laravel, CakePHP, Bootstrap, Vue (Framework - Nuxt js)',
+            // 'Develop and maintain Government Assets Management Project using Codeigniter and Bootstrap',
+            'Build company in-house E-learning and job portal',
+            'Frontend : use Vue (Nuxt) and React  (Next) JS',
+            'Backend : use Laravel, CakePHP'
+
         ],
         projects: [
             { link: 'www.career-techjapan.com [Trainee appointment and recruiting]' },
@@ -58,11 +62,15 @@ const steps = [
         date: 'Jul 2022 ~ Feb 2023'
     },
     {
-        company: 'Will-Tec Japanese Co.,Ltd',
-        position: 'Senior Web Developer',
+        company: 'Freelancer (self-employed)',
+        position: 'Freelance Full Stack Developer',
         description: [
+            // 'Develop and maintain for E-Learning Japanese language project',
+            // 'Create API, Customize ERP project using Codeigniter, document management/ company profile / blogs news, etc., using Laravel, Vue JS, bootstrap and Flutter'
             'Develop and maintain for E-Learning Japanese language project',
-            'Create API, Customize ERP project using Codeigniter, document management/ company profile / blogs news, etc., using Laravel, Vue JS, bootstrap and Flutter'
+            'Customize ERP project ,document management ,company profiles.',
+            'Backend: Use Laravel  , Codeigniter, Node JS',
+            'Frontend: Use  React, Vue, Bootstrap'
         ],
         date: 'Mar 2023 ~ Feb 2024'
     },
@@ -99,9 +107,9 @@ export const Home = () => {
     return (
         <>
             <Box>
-                <Box sx={{ bgcolor: theme.palette.background.default, p: 1 }}>
-                    <Grid container spacing={2} sx={{ alignItems: 'center' }}>
-                        <Grid item sm={6}>
+                <Box sx={{ bgcolor: theme.palette.background.default, py: 1, px: {xs: 1, md:10 } }}>
+                    <Grid container spacing={2} sx={{ alignItems: 'end' }}>
+                        <Grid item md={6} sm={7} sx={{mb: {sm: 5, xs: 0}}}>
                             <Box sx={{ pl: { sm: 6, md: 17 }, textAlign: { xs: 'center', sm: 'left' } }}>
                                 <Typography variant='subtitle1'>
                                     Hello guys, I am
@@ -133,20 +141,20 @@ export const Home = () => {
 
                             </Box>
                         </Grid>
-                        <Grid item sm={6} xs={12}>
+                        <Grid item md={6} sm={5} xs={12}>
                             <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                 <Box sx={{ alignItems: 'center', textAlign: 'center', width: { xs: 200, sm: 300, md: 360 } }}>
-                                    <img src='/images/developer.webp' alt='Developer' width='100%' />
+                                    <img src='/images/myphoto.png' alt='Developer' width='100%' />
                                 </Box>
                             </Box>
                         </Grid>
                     </Grid>
                 </Box>
             </Box>
-            <Box sx={{ mt: 2, bgcolor: theme.palette.background.main, px: { md: 0, sm: 3 }, py: 3 }}>
+            <Box sx={{ mt: 0.5, bgcolor: theme.palette.background.main, px: { md: 0, sm: 3 }, py: 3 }}>
 
                 <Box sx={{ p: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', mt: { xs: -7, md: -7, sm: -7 } }}>
-                    <Box style={{ boxShadow: 'rgb(207 172 65) 1px 4px 7px' }} sx={{ border: `1px solid ${yellow[700]}`, width: { md: '65%', xs: '100%' }, height: 50, bgcolor: theme.palette.secondary.main, display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', px: { md: 13, xs: 5 }, borderRadius: 8 }}>
+                    <Box style={{ boxShadow: 'rgb(207 172 65) 1px 4px 7px' }} sx={{ border: `1px solid ${yellow[700]}`, width: { md: '70%', xs: '100%' }, height: 50, bgcolor: theme.palette.secondary.main, display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', px: { md: 13, xs: 5 }, borderRadius: 8 }}>
 
                         <Link target="_blank" underline="none" sx={{ px: { xs: 3, sm: 0 }, fontSize: 16, fontWeight: 600, display: { xs: 'flex' }, alignItems: 'center' }} href='https://www.linkedin.com/in/ei-thandar-khaing-9401282a8'>
                             <LinkedInIcon sx={{ mr: 1, color: blue[900], fontSize: 30 }} />
@@ -167,8 +175,8 @@ export const Home = () => {
                 <Box sx={{ mt: 5,  px: { xs: 2, sm: 3, md: 15 } }} className="about">
                     <Grid container spacing={2} sx={{ alignItems: 'center' }}>
                         <Grid item md={4} sm={4} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                            <Box sx={{ mb: 5, display: { xs: 'none', sm: 'block', md: 'block' }, }} >
-                                <img src='/images/developer.png' alt='Developer' style={{ width: 250 }} width='100%' />
+                            <Box sx={{ mb: -3.5, display: { xs: 'none', sm: 'block', md: 'block' }, }} >
+                                <img src='/images/myphoto2.png' alt='Developer' style={{ width: 200 }} width='100%' />
                             </Box>
                         </Grid>
                         <Grid item md={7} sm={8} sx={{ textAlign: 'center' }}>
@@ -205,7 +213,7 @@ export const Home = () => {
 
                             {skills.map((skill, key) => (
                                 <Grid key={key} item sm={2} xs={4} sx={{ textAlign: 'center' }}>
-                                    <img style={{ paddingRight: 15 }} width={75} src={skill.icon} alt={skill.name} />
+                                    <img style={{ paddingRight: 15 }} width={75} src={`/${skill.icon}`} alt={skill.name} />
                                     <Typography sx={{ fontSize: 11, mt: 1, mb: 4 }}>{skill.name}</Typography>
                                 </Grid>
                             ))}
