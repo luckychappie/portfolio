@@ -144,7 +144,7 @@ export const Home = () => {
                         <Grid item md={6} sm={5} xs={12}>
                             <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                 <Box sx={{ alignItems: 'center', textAlign: 'center', width: { xs: 200, sm: 300, md: 360 } }}>
-                                    <img src='/images/myphoto.png' alt='Developer' width='100%' />
+                                    <img src='images/myphoto.png' alt='Developer' width='100%' />
                                 </Box>
                             </Box>
                         </Grid>
@@ -176,7 +176,7 @@ export const Home = () => {
                     <Grid container spacing={2} sx={{ alignItems: 'center' }}>
                         <Grid item md={4} sm={4} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                             <Box sx={{ mb: -3.5, display: { xs: 'none', sm: 'block', md: 'block' }, }} >
-                                <img src='/images/myphoto2.png' alt='Developer' style={{ width: 200 }} width='100%' />
+                                <img src='/images/developer.png' alt='Developer' style={{ width: 200 }} width='100%' />
                             </Box>
                         </Grid>
                         <Grid item md={7} sm={8} sx={{ textAlign: 'center' }}>
