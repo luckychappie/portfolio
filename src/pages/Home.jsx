@@ -213,7 +213,7 @@ export const Home = () => {
 
                             {skills.map((skill, key) => (
                                 <Grid key={key} item sm={2} xs={4} sx={{ textAlign: 'center' }}>
-                                    <img style={{ paddingRight: 15 }} width={75} src={`/${skill.icon}`} alt={skill.name} />
+                                    <img style={{ paddingRight: 15 }} width={75} src={`${skill.icon}`} alt={skill.name} />
                                     <Typography sx={{ fontSize: 11, mt: 1, mb: 4 }}>{skill.name}</Typography>
                                 </Grid>
                             ))}
