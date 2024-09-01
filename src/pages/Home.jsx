@@ -11,16 +11,16 @@ import { Language, LocationOn, Mail, Person, Phone } from '@mui/icons-material';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 const skills = [
-    { name: 'PHP', icon: '/images/plang/php.png' },
-    { name: 'Laravel', icon: '/images/plang/laravel.png' },
-    { name: 'Golang', icon: '/images/plang/golang.png' },
-    { name: 'Node JS (Express)', icon: '/images/plang/node.jpg' },
-    { name: 'VUE / Nuxt JS', icon: '/images/plang/vue.png' },
-    { name: 'React / Next JS', icon: '/images/plang/react.png' },
-    { name: 'CSS', icon: '/images/plang/css.png' },
-    { name: 'JQuery', icon: '/images/plang/jquery.png' },
-    { name: 'MySQL, PostgreSQL', icon: '/images/plang/db.png' },
-    { name: 'AWS, CPanel', icon: '/images/plang/server.png' },
+    { name: 'PHP', icon: 'images/plang/php.png' },
+    { name: 'Laravel', icon: 'images/plang/laravel.png' },
+    { name: 'Golang', icon: 'images/plang/golang.png' },
+    { name: 'Node JS (Express)', icon: 'images/plang/node.jpg' },
+    { name: 'VUE / Nuxt JS', icon: 'images/plang/vue.png' },
+    { name: 'React / Next JS', icon: 'images/plang/react.png' },
+    { name: 'CSS', icon: 'images/plang/css.png' },
+    { name: 'JQuery', icon: 'images/plang/jquery.png' },
+    { name: 'MySQL, PostgreSQL', icon: 'images/plang/db.png' },
+    { name: 'AWS, CPanel', icon: 'images/plang/server.png' },
 ]
 
 const steps = [
