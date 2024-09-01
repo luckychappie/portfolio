@@ -176,7 +176,7 @@ export const Home = () => {
                     <Grid container spacing={2} sx={{ alignItems: 'center' }}>
                         <Grid item md={4} sm={4} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                             <Box sx={{ mb: -3.5, display: { xs: 'none', sm: 'block', md: 'block' }, }} >
-                                <img src='/images/developer.png' alt='Developer' style={{ width: 200 }} width='100%' />
+                                <img src='images/myphoto2.png' alt='Developer' style={{ width: 200 }} width='100%' />
                             </Box>
                         </Grid>
                         <Grid item md={7} sm={8} sx={{ textAlign: 'center' }}>
@@ -213,7 +213,7 @@ export const Home = () => {
 
                             {skills.map((skill, key) => (
                                 <Grid key={key} item sm={2} xs={4} sx={{ textAlign: 'center' }}>
-                                    <img style={{ paddingRight: 15 }} width={75} src={`${skill.icon}`} alt={skill.name} />
+                                    <img style={{ paddingRight: 15 }} width={75} src={skill.icon} alt={skill.name} />
                                     <Typography sx={{ fontSize: 11, mt: 1, mb: 4 }}>{skill.name}</Typography>
                                 </Grid>
                             ))}
